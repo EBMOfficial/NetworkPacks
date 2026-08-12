@@ -108,7 +108,26 @@ fill -3074 102 1374 -3100 112 1364 minecraft:gray_concrete replace minecraft:och
 fill -3180 218 1193 -3212 96 1107 minecraft:gray_concrete replace minecraft:ochre_froglight
 
 # STUDIO J BUILDING
-fill -2994 103 1138 -3021 187 1218 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3016 107 1167 -3016 114 1164 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3010 107 1164 -3010 114 1167 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3016 107 1177 -3016 114 1173 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3006 107 1174 -3000 114 1174 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3001 107 1178 -3001 114 1186 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3016 107 1186 -3016 114 1183 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3016 131 1186 -3016 124 1164 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3010 131 1164 -3010 124 1167 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3006 119 1175 -3000 123 1175 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3001 119 1178 -3001 129 1186 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3006 128 1176 -3002 129 1176 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3000 107 1195 -3014 141 1209 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3013 137 1194 -3011 141 1194 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3005 140 1186 -3001 162 1178 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3006 140 1176 -3000 161 1174 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3013 166 1193 -3003 191 1192 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3001 166 1195 -3000 191 1208 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3003 166 1210 -3013 191 1211 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3015 166 1208 -3016 191 1195 minecraft:gray_concrete replace minecraft:ochre_froglight
+fill -3014 157 1194 -3002 161 1209 minecraft:gray_concrete replace minecraft:ochre_froglight
 
 # PHARRELL STUDIOS LIGHTING
 fill -3014 92 1003 -3014 98 983 minecraft:gray_concrete replace minecraft:ochre_froglight
