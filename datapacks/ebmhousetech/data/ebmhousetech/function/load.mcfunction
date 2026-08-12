@@ -1,0 +1,1 @@
+say EBM Residence Tech Pack is loaded. use /function ebmhousetech to learn more.

@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Bedroom Control Module",
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "Exit Bedroom Control",
+      "color": "red"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": "Bedroom Lights",
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "dialog show @p ebmhousetech:bedroomcontrols"
+      }
+    },
+    {
+      "label": {
+        "text": "On",
+        "color": "green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:ebmbedroomlightson"
+      }
+    },
+    {
+      "label": {
+        "text": "Off",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:ebmbedroomlightsoff"
+      }
+    },
+    {
+      "label": "Bedroom Curtains",
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "dialog show @p ebmhousetech:bedroomcontrols"
+      }
+    },
+    {
+      "label": {
+        "text": "On",
+        "color": "green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:bedroomcurtainson"
+      }
+    },
+    {
+      "label": {
+        "text": "Off",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:bedroomcurtainsoff"
+      }
+    },
+    {
+      "label": "Bathroom Lights",
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "dialog show @p ebmhousetech:bedroomcontrols"
+      }
+    },
+    {
+      "label": {
+        "text": "On",
+        "color": "green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:bathroomlightson"
+      }
+    },
+    {
+      "label": {
+        "text": "Off",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:bathroomlightsoff"
+      }
+    },
+    {
+      "label": "Bathroom Curtains",
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "dialog show @p ebmhousetech:bedroomcontrols"
+      }
+    },
+    {
+      "label": {
+        "text": "On",
+        "color": "green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:bathroomcurtainson"
+      }
+    },
+    {
+      "label": {
+        "text": "Off",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ebmhousetech:bathroomcurtainsoff"
+      }
+    }
+  ]
+}

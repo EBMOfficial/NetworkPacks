@@ -1,0 +1,233 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Living Room Controls",
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "Exit Living Room Control",
+      "color": "red"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Light Controls",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Light Controls",
+          "can_close_with_escape": true,
+          "exit_action": {
+            "label": {
+              "text": "Exit Light Control",
+              "color": "red"
+            },
+            "action": {
+              "type": "minecraft:run_command",
+              "command": "dialog show @p ebmhousetech:livingroomcontrols"
+            }
+          },
+          "actions": [
+            {
+              "label": {
+                "text": "On",
+                "color": "green"
+              },
+              "width": 50,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:ebmlivingroomlightson"
+              }
+            },
+            {
+              "label": {
+                "text": "Off",
+                "color": "red"
+              },
+              "width": 50,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:ebmlivingroomlightsoff"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "TV Controls",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "TV Controls",
+          "exit_action": {
+            "label": {
+              "text": "Exit TV Control",
+              "color": "red"
+            },
+            "action": {
+              "type": "minecraft:run_command",
+              "command": "dialog show @p ebmhousetech:livingroomcontrols"
+            }
+          },
+          "actions": [
+            {
+              "label": {
+                "text": "On",
+                "color": "green"
+              },
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvon"
+              }
+            },
+            {
+              "label": {
+                "text": "Off",
+                "color": "red"
+              },
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvoff"
+              }
+            },
+            {
+              "label": "EBMtv",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvebmtv"
+              }
+            },
+            {
+              "label": "Disney+",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvdisneyplus"
+              }
+            },
+            {
+              "label": "Top Gear",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvtopgear"
+              }
+            },
+            {
+              "label": "YouTube",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvyoutube"
+              }
+            },
+            {
+              "label": "FMovies",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:tvfmovies"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Skylight Controls",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Skylight Controls",
+          "can_close_with_escape": true,
+          "exit_action": {
+            "label": {
+              "text": "Exit Skylight Control",
+              "color": "red"
+            },
+            "action": {
+              "type": "minecraft:run_command",
+              "command": "dialog show @p ebmhousetech:livingroomcontrols"
+            }
+          },
+          "actions": [
+            {
+              "label": {
+                "text": "Toggle Solid Roof",
+                "color": "black"
+              },
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:ebmskylightclosed"
+              }
+            },
+            {
+              "label": {
+                "text": "Toggle Glass Roof",
+                "color": "aqua"
+              },
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:ebmskylightglass"
+              }
+            },
+            {
+              "label": {
+                "text": "Toggle Open Roof",
+                "color": "blue"
+              },
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:ebmskylightopen"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Main Door Controls",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Main Door Controls",
+          "exit_action": {
+            "label": {
+              "text": "Exit Main Door Control",
+              "color": "red"
+            },
+            "action": {
+              "type": "minecraft:run_command",
+              "command": "dialog show @p ebmhousetech:livingroomcontrols"
+            }
+          },
+          "actions": [
+            {
+              "label": {
+                "text": "Open",
+                "color": "green"
+              },
+              "width": 50,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:maindooropen"
+              }
+            },
+            {
+              "label": {
+                "text": "Close",
+                "color": "red"
+              },
+              "width": 50,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function ebmhousetech:maindoorclosed"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

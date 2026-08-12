@@ -1,0 +1,1 @@
+say EBM Tower Tech Pack is loaded. use /function ebmtowertech to learn more.

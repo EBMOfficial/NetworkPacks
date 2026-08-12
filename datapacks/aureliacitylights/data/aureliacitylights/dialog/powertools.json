@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Power Tools",
+  "external_title": "Power Tools",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Administrators may use this menu to execute various QoL features."
+  },
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "time",
+      "label": "Time",
+      "start": 0,
+      "end": 24000,
+      "step": 100,
+      "initial": 1000
+    }
+  ],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "Exit Power Tools",
+      "color": "red"
+    }
+  },
+  "actions": [
+    {
+      "label": "Confirm Time Change",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:timeset {time: $(time)}"
+      }
+    },
+    {
+      "label": "Remove Stray Items",
+      "tooltip": "Removes all items lying on the ground.",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:removeitems"
+      }
+    },
+    {
+      "label": "Get Invisible Glow Item Frame",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:getglowframe"
+      }
+    },
+    {
+      "label": "Get Invisible Item Frame",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:getframe"
+      }
+    },
+    {
+      "label": "Clear Inventory",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:clearinventory"
+      }
+    },
+    {
+      "label": "Summon Invisible Armor Stand at Current Location",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:armorstand"
+      }
+    },
+    {
+      "label": "Weather: Clear",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:weatherclear"
+      }
+    },
+    {
+      "label": "Weather: Rain",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:weatherrain"
+      }
+    },
+    {
+      "label": "Weather: Thunder",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:weatherthunder"
+      }
+    }
+    
+  ]
+}

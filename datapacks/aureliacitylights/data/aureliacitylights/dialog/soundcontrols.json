@@ -1,0 +1,549 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Modular Music Control"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "In the mood to jam out? EBM Industries has you covered with it's state-of-the-art Aura music system!",
+        "color": "green",
+        "bold": false
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "volmax",
+      "label": "Volume",
+      "start": 0.1,
+      "end": 5,
+      "step": 0.1,
+      "initial": 0.1
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "pitch",
+      "label": "Pitch",
+      "start": 0.5,
+      "end": 2,
+      "step": 0.1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:text",
+      "key": "coord1",
+      "label": "Coordinate 1"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "coord2",
+      "label": "Coordinate 2"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "coord3",
+      "label": "Coordinate 3"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "coord4",
+      "label": "Coordinate 4"
+    }
+  ],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "Exit Music Control",
+      "color": "red"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "Stop Player",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:modularsoundsystemstopplayer"
+      }
+    },
+    {
+      "label": "The Weeknd - Timeless (ft. Playboi Carti)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndplayboicartitimelessfeatplayboicarti, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - The Hills",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndthehills, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Save Your Tears (Remix) (ft. Ariana Grande)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndarianagrandesaveyourtearswitharianagranderemix, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Take My Breath",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndtakemybreath, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "J. Cole - m y . l i f e (ft. 21 Savage, Morray)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:jcoletwoonesavagemorraymylifewithtwoonesavagemorray, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "J. Cole - No Role Modelz",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:jcolenorolemodelz, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "21 Savage - A Lot (ft. J. Cole)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:twoonesavagealot, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Kendrick Lamar - luther (ft. sza)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kendricklamarszalutherwithsza, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Kendrick Lamar - DNA",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kendricklamardna, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Travis Scott - FRANCHISE (ft. Young Thug, M.I.A.)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:travisscottfranchisewithoutmia, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Westside Connection - Bow Down",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:westsideconnectionbowdown, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Sabrina Carpenter - Espresso",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:sabrinacarpenterespresso, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Dua Lipa - Don't Start Now",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dualipadontstartnow, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Chief Keef - Love Sosa",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:chiefkeeflovesosa, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "King Von - Took Her To The O",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kingvontookhertotheo, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Taylor Swift - Style (Taylor's Version)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:taylorswiftstyletaylorsversion, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Dua Lipa - Dance The Night",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dualipadancethenight, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Yeat - If We Being Rëal",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:yeatifwebeingreal, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Katy Perry - Teenage Dream",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:katyperryteenagedream, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Roddy Ricch - The Box",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:roddyricchthebox, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "King Von - Crazy Story (Remix) (ft. Lil Durk)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kingvonlildurkcrazystorytwo, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Dua Lipa - Training Season",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dualipatrainingseason, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "King Von - All These N****s (ft. Lil Durk)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kingvonlildurkalltheseniggas, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Ariana Grande - bloodline",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:arianagrandebloodline, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Dua Lipa - Levitating",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dualipalevitating, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Lil Durk - All My Life (ft. J. Cole)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:lildurkjcoleallmylife, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Taylor Swift - All You Had To Do Was Stay (Taylor's Version)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:taylorswiftallyouhadtodowasstaytaylorsversion, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Dua Lipa - Love Again",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dualipaloveagain, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "King Von - When I Die",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kingvonwhenidie, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "King Von, Lil Durk - Still Trappin'",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kingvonlildurkstilltrappin, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "King Von, Lil Durk - Evil Twins",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:kingvonlildurkeviltwins, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Ty Dolla $ign - Don't Kill The Party (feat. Quavo & Juicy J)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:tydollasigndontkillthepartyfeatquavojuicyj, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Offset - Bodies (feat. JID)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:offsetbodiesfeatjid, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Offset - Checkmate (Smooth)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:offsetcheckmatesmooth, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Offset - Say My Grace (feat. Travis Scott)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:offsetsaymygracefeattravisscott, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Don Toliver - Kryptonite",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dontoliverkryptonite, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Don Toliver - No Pole",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:dontolivernopole, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Future - GTA",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:futuregta, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Future - Type Shit",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:futuretypeshit, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Future - Like That",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:futurelikethat, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Future - Puffin On Zootiez",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:futurepuffinonzootiez, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Metro Boomin - Creepin' (with The Weeknd & 21 Savage)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:metroboomincreepinwiththeweekndtwoonesavage, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Metro Boomin - I Can't Save You (Interlude) (with Future & Don Toliver)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:metroboominicantsaveyouinterludewithfuturefeatdontoliver, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Metro Boomin - Metro Spider (with Young Thug)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:metroboominmetrospiderwithyoungthug, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Metro Boomin - Too Many Nights (feat. Don Toliver & Future)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:metroboomintoomanynightsfeatdontoliverwithfuture, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - After Hours",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndafterhours, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Cry For Me",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndcryforme, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Die For You",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweeknddieforyou, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Double Fantasy (feat. Future)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweeknddoublefantasywithfuture, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Heartless",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndheartless, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Kiss Land",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndkissland, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Sacrifice",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndsacrifice, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Secrets",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndsecrets, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Take Me Back to LA",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndtakemebacktola, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Wake Me Up (feat. Justice)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndwakemeupfeatjustice, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Travis Scott - TIL Further Notice (feat. James Blake & 21 Savage)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:travisscotttilfurthernoticefeatjamesblaketwoonesavage, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "Swedish House Mafia - Moth To A Flame (with The Weeknd)",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:swedishhousemafiamothtoaflamewiththeweeknd, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "SZA - Shirt",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:szashirt, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    },
+    {
+      "label": "The Weeknd - Blinding Lights",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function aureliacitylights:modularsoundsystem {song:theweekndblindinglights, coord1x: $(coord1x), coord1y: $(coord1y), coord1z: $(coord1z), coord2x: $(coord2x), coord2y: $(coord2y), coord2z: $(coord2z), coord3x: $(coord3x), coord3y: $(coord3y), coord3z: $(coord3z), coord4x: $(coord4x), coord4y: $(coord4y), coord4z: $(coord4z), volmax: $(volmax), pitch: $(pitch), volmin:0.1}"
+      }
+    }
+  ]
+}

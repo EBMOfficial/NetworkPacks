@@ -1,0 +1,143 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "EBMTech Store Light Control",
+  "exit_action": {
+    "label": {
+      "text": "Exit Light Control",
+      "color": "red"
+    }
+  },
+  "actions": [
+    {
+      "label": {
+        "text": "On",
+        "color": "green"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightson"
+      }
+    },
+    {
+      "label": {
+        "text": "Off",
+        "color": "red"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightsoff"
+      }
+    },
+    {
+      "label": {
+        "text": "Lime",
+        "color": "green"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:lime}"
+      }
+    },
+    {
+      "label": {
+        "text": "Red",
+        "color": "dark_red"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:red}"
+      }
+    },
+    {
+      "label": {
+        "text": "Blue",
+        "color": "blue"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:blue}"
+      }
+    },
+    {
+      "label": {
+        "text": "Magenta",
+        "color": "#FF00FF"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:magenta}"
+      }
+    },
+    {
+      "label": {
+        "text": "Pink",
+        "color": "#FF69B4"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:pink}"
+      }
+    },
+    {
+      "label": {
+        "text": "White"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:white}"
+      }
+    },
+    {
+      "label": {
+        "text": "Purple",
+        "color": "#9D00FF"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:purple}"
+      }
+    },
+    {
+      "label": {
+        "text": "Orange",
+        "color": "#FF5C00"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:orange}"
+      }
+    },
+    {
+      "label": {
+        "text": "Yellow",
+        "color": "yellow"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:yellow}"
+      }
+    },
+    {
+      "label": {
+        "text": "Cyan",
+        "color": "aqua"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function aureliacitylights:ebmstore01lightscolor {color:cyan}"
+      }
+    }
+  ]
+}

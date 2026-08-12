@@ -1,0 +1,1 @@
+say J. Cole Plaza Tech Pack is loaded. use /function jcoleplazatech to learn more.

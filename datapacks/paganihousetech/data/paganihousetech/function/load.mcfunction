@@ -1,0 +1,1 @@
+say Pagani Residence Tech Pack is loaded. use /function paganihousetech to learn more.

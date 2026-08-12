@@ -1,0 +1,401 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Studio Control Module",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "\"Music and light functionalities can all be controlled through this menu.",
+      "color": "green"
+    },
+    "width": 500
+  },
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "Exit Music Control",
+      "color": "red"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Light Controls",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Light Controls",
+          "can_close_with_escape": true,
+          "exit_action": {
+            "label": {
+              "text": "Exit Light Control",
+              "color": "red"
+            },
+            "action": {
+              "type": "minecraft:run_command",
+              "command": "dialog show @p shibaruhousetech:studiocontrols"
+            }
+          },
+          "actions": [
+            {
+              "label": {
+                "text": "On",
+                "color": "green"
+              },
+              "width": 50,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function shibaruhousetech:studiolightson"
+              }
+            },
+            {
+              "label": {
+                "text": "Off",
+                "color": "red"
+              },
+              "width": 50,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function shibaruhousetech:studiolightsoff"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Music Controls",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Music Controls",
+          "body": {
+            "type": "minecraft:plain_message",
+            "contents": {
+              "text": "In the mood to jam out? CHROMA Inc. has you covered with it's state-of-the-art DUO music system!",
+              "color": "green"
+            }
+          },
+          "inputs": [
+            {
+              "type": "minecraft:number_range",
+              "key": "volmax",
+              "label": "Volume",
+              "start": 0.1,
+              "end": 5,
+              "step": 0.1,
+              "initial": 0.1
+            },
+            {
+              "type": "minecraft:number_range",
+              "key": "pitch",
+              "label": "Pitch",
+              "start": 0.5,
+              "end": 2,
+              "step": 0.1,
+              "initial": 1
+            }
+          ],
+          "can_close_with_escape": true,
+          "exit_action": {
+            "label": {
+              "text": "Exit Music Control",
+              "color": "red"
+            },
+            "action": {
+              "type": "minecraft:run_command",
+              "command": "dialog show @p shibaruhousetech:studiocontrols"
+            }
+          },
+          "columns": 2,
+          "actions": [
+            {
+              "label": {
+                "text": "Stop Player",
+                "color": "red"
+              },
+              "width": 200,
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function shibaruhousetech:shibarusoundsystemstopplayer"
+              }
+            },
+            {
+              "label": "Ty Dolla $ign - Don't Kill The Party (feat. Quavo & Juicy J)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:tydollasigndontkillthepartyfeatquavojuicyj,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - The Hills",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndthehills,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Offset - Bodies (feat. JID)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:offsetbodiesfeatjid,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Offset - Checkmate (Smooth)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:offsetcheckmatesmooth,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "J. Cole - m y . l i f e (feat. 21 Savage, Morray)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:jcoletwoonesavagemorraymylifewithtwoonesavagemorray,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Offset - Say My Grace (feat. Travis Scott)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:offsetsaymygracefeattravisscott,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Don Toliver - Kryptonite",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:dontoliverkryptonite,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Don Toliver - No Pole",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:dontolivernopole,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Future - GTA",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:futuregta,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Future - Type Shit",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:futuretypeshit,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Future - Like That",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:futurelikethat,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Future - Puffin On Zootiez",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:futurepuffinonzootiez,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Metro Boomin - Creepin' (with The Weeknd & 21 Savage)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:metroboomincreepinwiththeweekndtwoonesavage,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Metro Boomin - I Can't Save You (Interlude) (with Future & Don Toliver)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:metroboominicantsaveyouinterludewithfuturefeatdontoliver,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Metro Boomin - Metro Spider (with Young Thug)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:metroboominmetrospiderwithyoungthug,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Metro Boomin - Too Many Nights (feat. Don Toliver & Future)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:metroboomintoomanynightsfeatdontoliverwithfuture,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - After Hours",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndafterhours,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Cry For Me",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndcryforme,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Die For You",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweeknddieforyou,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Double Fantasy (feat. Future)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweeknddoublefantasywithfuture,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Heartless",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndheartless,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Kiss Land",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndkissland,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Timeless (feat. Playboi Carti)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndplayboicartitimelessfeatplayboicarti,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Sacrifice",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndsacrifice,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Secrets",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndsecrets,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Take Me Back to LA",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndtakemebacktola,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Take My Breath",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndtakemybreath,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Wake Me Up (feat. Justice)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndwakemeupfeatjustice,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Travis Scott - Franchise (feat. Young Thug)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:travisscottfranchisewithoutmia,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Travis Scott - TIL Further Notice (feat. James Blake & 21 Savage)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:travisscotttilfurthernoticefeatjamesblaketwoonesavage,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Swedish House Mafia - Moth To A Flame (with The Weeknd)",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:swedishhousemafiamothtoaflamewiththeweeknd,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "SZA - Shirt",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:szashirt,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "Kendrick Lamar - DNA",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:kendricklamardna,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            },
+            {
+              "label": "The Weeknd - Blinding Lights",
+              "width": 200,
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function shibaruhousetech:shibarusoundsystem {song:theweekndblindinglights,volmax: $(volmax),pitch: $(pitch),volmin:0.1}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
