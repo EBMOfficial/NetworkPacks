@@ -1,1 +1,0 @@
-say Aurelia City Tech Pack is loaded. use function /aureliacitylights to learn more.

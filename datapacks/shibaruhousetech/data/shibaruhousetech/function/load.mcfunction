@@ -1,1 +1,0 @@
-say Shibaru Residence Tech Pack is loaded. use /function shibaruhousetech to learn more.

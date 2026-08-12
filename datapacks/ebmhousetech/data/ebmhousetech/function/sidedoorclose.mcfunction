@@ -1,1 +1,0 @@
-fill -3416 81 1623 -3416 78 1625 minecraft:white_stained_glass_pane replace minecraft:air
